@@ -1,0 +1,90 @@
+// =============================
+// GLFW Setup Functions
+// =============================
+
+// glfwInit(); 
+// Initializes the GLFW library. Must be called before any other GLFW functions.
+
+// glfwCreateWindow(width, height, title, NULL, NULL);
+// Creates a windowed mode window and its OpenGL context.
+
+// glfwMakeContextCurrent(window);
+// Makes the OpenGL context of the specified window current on the calling thread.
+
+// glfwSwapInterval(1);
+// Enables v-sync (synchronizes buffer swap with monitor refresh rate).
+
+// glfwShowWindow(window);
+// Makes the window visible.
+
+// glfwWindowShouldClose(window);
+// Returns true if the user has requested to close the window.
+
+// glfwSwapBuffers(window);
+// Swaps the front and back buffers.
+
+// glfwPollEvents();
+// Processes all pending events (keyboard, mouse, window).
+
+// glfwDestroyWindow(window); 
+// Destroys the created window and releases its resources.
+
+// glfwTerminate(); 
+// Cleans up all GLFW resources.
+
+// =============================
+// OpenGL Setup Functions
+// =============================
+
+// GL.createCapabilities();
+// Creates OpenGL context capabilities. Must be called once after context creation.
+
+// glClearColor(r, g, b, a);
+// Sets the background color. Each value is between 0.0f and 1.0f.
+
+// glEnable(GL_DEPTH_TEST);
+// Enables depth testing so 3D objects are rendered correctly in depth order.
+
+// glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+// Clears the color and depth buffers before rendering a new frame.
+
+// =============================
+// Projection and View Setup
+// =============================
+
+// glMatrixMode(GL_PROJECTION);
+// Switches to the projection matrix (used for setting camera perspective).
+
+// glMatrixMode(GL_MODELVIEW);
+// Switches back to the modelview matrix (used for rendering objects).
+
+// glLoadIdentity();
+// Resets the current matrix to the identity matrix.
+
+// glFrustum(left, right, bottom, top, near, far);
+// Defines a perspective matrix (used in custom gluPerspective).
+
+// gluPerspective(fovY, aspect, near, far);
+// Custom helper method to simulate perspective projection.
+
+// glTranslatef(x, y, z);
+// Moves (translates) the object along the x, y, z axes.
+
+// glRotatef(angle, x, y, z);
+// Rotates the object around the given axis vector.
+
+// =============================
+// Drawing Functions
+// =============================
+
+// glBegin(GL_QUADS);
+// Begins drawing quadrilaterals. Must be followed by glVertex3f calls.
+
+// glColor3f(r, g, b);
+// Sets the current drawing color. Values must be float (e.g., 1.0f).
+
+// glVertex3f(x, y, z);
+// Specifies a 3D vertex (corner of a face).
+
+// glEnd();
+// Ends drawing for the current primitive (e.g., GL_QUADS).
